@@ -3,6 +3,8 @@ import Image from "next/image";
 import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star } from "lucide-react";
 
 export default function Home() {
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=9720522331844&text&type=phone_number&app_absent=0";
+
   const testimonials = [
     "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42.jpeg",
     "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (1).jpeg",
@@ -26,34 +28,50 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden bg-rose-50/50">
         <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.31.51.jpeg')] bg-cover bg-center opacity-10" />
-        <div className="container mx-auto px-4 relative z-10 max-w-5xl text-center">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-rose-200 text-rose-800 text-sm font-semibold mb-6 shadow-sm">
-            ברוכה הבאה לקליניקת "נס המגע"
-          </span>
-          <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-rose-900 drop-shadow-sm">
-            נועם ספיר <br />
-            <span className="text-rose-600 font-medium text-3xl md:text-5xl">רפלקסולוגית בגישת גוף-נפש</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-12 text-rose-800/80 max-w-3xl mx-auto leading-relaxed font-medium">
-            אני מזמינה אותך למרחב בטוח ושקט שבו הגוף שלך מקבל את תשומת הלב המגיעה לו. 
-            כשאת מטפלת בכפות הרגליים, את מטפלת בנשמה.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <a
-              href="https://wa.me/972500000000" // Replace with actual number if known
-              target="_blank"
-              rel="noreferrer"
-              className="bg-rose-600 hover:bg-rose-700 text-white font-bold py-5 px-10 rounded-full text-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
-            >
-              <Phone size={24} />
-              תיאום טיפול בוואטסאפ
-            </a>
-            <a
-              href="#about"
-              className="bg-white hover:bg-rose-50 text-rose-800 font-bold py-5 px-10 rounded-full text-xl border-2 border-rose-200 shadow-lg hover:shadow-xl transition-all flex items-center justify-center"
-            >
-              הכירי את "נס המגע"
-            </a>
+        <div className="container mx-auto px-4 relative z-10 max-w-6xl">
+          <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-right">
+            <div className="lg:w-3/5">
+              <span className="inline-block py-1.5 px-4 rounded-full bg-rose-200 text-rose-800 text-sm font-semibold mb-6 shadow-sm">
+                ברוכה הבאה לקליניקת "נס המגע"
+              </span>
+              <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-rose-900 drop-shadow-sm">
+                נועם ספיר <br />
+                <span className="text-rose-600 font-medium text-3xl md:text-5xl italic">רפלקסולוגית בגישת גוף-נפש</span>
+              </h1>
+              <p className="text-xl md:text-2xl mb-12 text-rose-800/80 max-w-3xl lg:ml-0 leading-relaxed font-medium">
+                אני מזמינה אותך למרחב בטוח ושקט שבו הגוף שלך מקבל את תשומת הלב המגיעה לו. 
+                כשאת מטפלת בכפות הרגליים, את מטפלת בנשמה.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-rose-600 hover:bg-rose-700 text-white font-bold py-5 px-10 rounded-full text-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
+                >
+                  <Phone size={24} />
+                  תיאום טיפול בוואטסאפ
+                </a>
+                <a
+                  href="#about"
+                  className="bg-white hover:bg-rose-50 text-rose-800 font-bold py-5 px-10 rounded-full text-xl border-2 border-rose-200 shadow-lg hover:shadow-xl transition-all flex items-center justify-center"
+                >
+                  הכירי את "נס המגע"
+                </a>
+              </div>
+            </div>
+            <div className="lg:w-2/5 relative">
+              <div className="absolute -inset-4 bg-rose-100 rounded-[3rem] rotate-6" />
+              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] w-full max-w-sm mx-auto">
+                <Image 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
+                  alt="נועם ספיר - רפלקסולוגית" 
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -61,13 +79,13 @@ export default function Home() {
       {/* Philosophy Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2 relative">
-              <div className="absolute -inset-4 bg-rose-100 rounded-[3rem] rotate-3" />
+              <div className="absolute -inset-4 bg-rose-100 rounded-[3rem] -rotate-3" />
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
                 <Image 
-                  src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
-                  alt="נועם ספיר מטפלת" 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.30.45.jpeg" 
+                  alt="טיפול רפלקסולוגיה בקליניקה" 
                   fill
                   className="object-cover"
                 />
@@ -81,17 +99,17 @@ export default function Home() {
                 זוהי כלי עוצמתי לשחרור חסימות רגשיות, הפחתת מתחים ואיזון המערכות ההורמונליות והפיזיות. 
                 במרחב שלי, "נס המגע", אני משלבת הקשבה עמוקה לידע שהגוף צובר יחד עם מגע מרפא ומדויק.
               </p>
-              <div className="space-y-4 pt-4">
+              <div className="space-y-4 pt-4 text-right">
                 {[
                   "שלווה עמוקה ושחרור מתחים מצטברים",
                   "חיבור פנימי וזמן איכות שבו את במרכז",
                   "איזון גופני: סיוע בשינה, עיכול ואיזון נשי"
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
+                  <div key={i} className="flex items-center gap-3 justify-end">
+                    <span className="font-semibold text-rose-900">{item}</span>
                     <div className="bg-rose-100 p-1 rounded-full text-rose-600">
                       <CheckCircle2 size={20} />
                     </div>
-                    <span className="font-semibold text-rose-900">{item}</span>
                   </div>
                 ))}
               </div>
@@ -201,9 +219,9 @@ export default function Home() {
                   "למי שסובלת ממתח, עומס נפשי או קשיי שינה",
                   "למי שמחפשת פתרון טבעי ועמוק לאיזון הגוף"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 group">
+                  <li key={i} className="flex items-start gap-4 group justify-end">
+                    <span className="text-lg font-semibold text-rose-800 text-right">{item}</span>
                     <CheckCircle2 className="text-rose-500 shrink-0 mt-1 transition-transform group-hover:scale-110" size={22} />
-                    <span className="text-lg font-semibold text-rose-800">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -222,9 +240,9 @@ export default function Home() {
                   "למי שלא מוכנה להתמסר לתהליך של שקט והרפיה",
                   "למי שרוצה תוצאות 'קסם' מבלי להקשיב לגוף"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 opacity-70">
+                  <li key={i} className="flex items-start gap-4 opacity-70 justify-end">
+                    <span className="text-lg font-medium text-stone-700 text-right">{item}</span>
                     <XCircle className="text-stone-400 shrink-0 mt-1" size={22} />
-                    <span className="text-lg font-medium text-stone-700">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -248,7 +266,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 text-center md:text-right">
               <h2 className="text-4xl font-black text-rose-900">נעים מאוד, אני נועם ספיר</h2>
               <div className="space-y-4 text-xl text-rose-800/90 leading-relaxed font-medium">
                 <p>
@@ -275,7 +293,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col items-center gap-8">
             <a
-              href="https://wa.me/972500000000" // Replace with actual number
+              href={whatsappLink}
               target="_blank"
               rel="noreferrer"
               className="bg-white text-rose-900 font-black py-6 px-14 rounded-full text-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-4"
