@@ -1,17 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star } from "lucide-react";
+import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star, Instagram, Facebook } from "lucide-react";
 
 export default function Home() {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=9720522331844&text&type=phone_number&app_absent=0";
+  const instagramLink = "https://www.instagram.com/n.s_hamaga_reflexology?igsh=OHc3am8wYm5jNzly";
+  const facebookLink = "https://www.facebook.com/sapir.hadar/photos";
 
   const testimonials = [
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42.jpeg",
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (1).jpeg",
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (2).jpeg",
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (3).jpeg",
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (4).jpeg",
-    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (5).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43.jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (1).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (2).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (3).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (4).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (5).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (6).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44.jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (1).jpeg",
   ];
 
   const galleryImages = [
@@ -306,9 +311,16 @@ export default function Home() {
               <Phone size={32} />
               דברי איתי בוואטסאפ
             </a>
-            <div className="flex gap-4 items-center text-brand-200 font-semibold text-lg">
-              <span>עקבי אחריי לעוד רגעי שלווה</span>
-              <a href="https://www.facebook.com/sapir.hadar/photos" target="_blank" className="underline hover:text-white transition-colors">בפייסבוק</a>
+            
+            <div className="flex flex-wrap justify-center gap-6 mt-4">
+              <a href={instagramLink} target="_blank" className="flex items-center gap-2 text-brand-200 hover:text-white transition-colors font-semibold">
+                <Instagram size={24} />
+                אינסטגרם
+              </a>
+              <a href={facebookLink} target="_blank" className="flex items-center gap-2 text-brand-200 hover:text-white transition-colors font-semibold">
+                <Facebook size={24} />
+                פייסבוק
+              </a>
             </div>
           </div>
         </div>
