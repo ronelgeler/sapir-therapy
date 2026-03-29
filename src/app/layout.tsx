@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl" className={`${heebo.variable} scroll-smooth`}>
-      <body className="font-sans antialiased bg-sand-50 text-rose-900">
+      <body className="font-sans antialiased bg-sand-50 text-brand-900">
         {children}
       </body>
     </html>

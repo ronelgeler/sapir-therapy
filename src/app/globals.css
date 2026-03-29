@@ -1,38 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-rose-50: #fff1f2;
-  --color-rose-100: #ffe4e6;
-  --color-rose-200: #fecdd3;
-  --color-rose-300: #fda4af;
-  --color-rose-400: #fb7185;
-  --color-rose-500: #f43f5e;
-  --color-rose-600: #e11d48;
-  --color-rose-700: #be123c;
-  --color-rose-800: #9f1239;
-  --color-rose-900: #881337;
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-200: #bae6fd;
+  --color-brand-300: #7dd3fc;
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-700: #0369a1;
+  --color-brand-800: #075985;
+  --color-brand-900: #0c4a6e;
+  --color-brand-950: #082f49;
 
-  --color-pink-50: #fdf2f8;
-  --color-pink-100: #fce7f3;
-  --color-pink-200: #fbcfe8;
-  --color-pink-300: #f9a8d4;
-  --color-pink-400: #f472b6;
-  --color-pink-500: #ec4899;
-  --color-pink-600: #db2777;
-  --color-pink-700: #be185d;
-  --color-pink-800: #9d174d;
-  --color-pink-900: #831843;
+  --color-accent-50: #ecfeff;
+  --color-accent-100: #cffafe;
+  --color-accent-200: #a5f3fc;
+  --color-accent-300: #67e8f9;
+  --color-accent-400: #22d3ee;
+  --color-accent-500: #06b6d4;
+  --color-accent-600: #0891b2;
+  --color-accent-700: #0e7490;
+  --color-accent-800: #155e75;
+  --color-accent-900: #164e63;
 
-  --color-sand-50: #fffdfc;
-  --color-sand-100: #fdf8f6;
-  --color-sand-200: #faefe9;
+  --color-sand-50: #f8fafc;
+  --color-sand-100: #f1f5f9;
+  --color-sand-200: #e2e8f0;
 
   --font-sans: var(--font-heebo);
 }
 
 :root {
-  --background: #fffdfc;
-  --foreground: #881337;
+  --background: #f8fafc;
+  --foreground: #0c4a6e;
 }
 
 body {
