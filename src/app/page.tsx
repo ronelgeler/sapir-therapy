@@ -140,9 +140,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4 italic">נס המגע בתמונות</h2>
             <div className="h-1.5 w-24 bg-brand-300 mx-auto rounded-full"></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {galleryImages.map((img, i) => (
-              <div key={i} className="relative aspect-square rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 border-2 border-white">
+              <div key={i} className="relative w-[160px] h-[160px] md:w-[190px] md:h-[190px] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 border-2 border-white flex-shrink-0">
                 <Image src={img} alt={`Gallery ${i}`} fill className="object-cover" />
               </div>
             ))}
