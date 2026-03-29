@@ -1,112 +1,185 @@
 import React from "react";
-import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle } from "lucide-react";
+import Image from "next/image";
+import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star } from "lucide-react";
 
 export default function Home() {
+  const testimonials = [
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42.jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (1).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (2).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (3).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (4).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 15.41.42 (5).jpeg",
+  ];
+
+  const galleryImages = [
+    "/images/WhatsApp Image 2026-03-29 at 15.30.44 (1).jpeg",
+    "/images/WhatsApp Image 2026-03-29 at 15.30.44.jpeg",
+    "/images/WhatsApp Image 2026-03-29 at 15.30.45 (1).jpeg",
+    "/images/WhatsApp Image 2026-03-29 at 15.30.45 (2).jpeg",
+    "/images/WhatsApp Image 2026-03-29 at 15.30.45 (3).jpeg",
+    "/images/WhatsApp Image 2026-03-29 at 15.30.45.jpeg",
+  ];
+
   return (
-    <main className="min-h-screen bg-sand-50 selection:bg-sage-200 text-sage-900">
+    <main className="min-h-screen bg-sand-50 selection:bg-rose-100 text-rose-950">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-32 overflow-hidden bg-sage-50">
-        <div className="absolute inset-0 bg-sage-100/30" />
-        <div className="container mx-auto px-4 relative z-10 max-w-4xl text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-sage-200 text-sage-800 text-sm font-medium mb-6">
-            הגיע הזמן לעצור, לנשום ולהתחבר מחדש
+      <section className="relative pt-20 pb-32 overflow-hidden bg-rose-50/50">
+        <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.31.51.jpeg')] bg-cover bg-center opacity-10" />
+        <div className="container mx-auto px-4 relative z-10 max-w-5xl text-center">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-rose-200 text-rose-800 text-sm font-semibold mb-6 shadow-sm">
+            ברוכה הבאה לקליניקת "נס המגע"
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-sage-900">
-            רפלקסולוגית - מטפלת גוף נפש
+          <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-rose-900 drop-shadow-sm">
+            נועם ספיר <br />
+            <span className="text-rose-600 font-medium text-3xl md:text-5xl">רפלקסולוגית בגישת גוף-נפש</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-10 text-sage-700 max-w-2xl mx-auto leading-relaxed">
-            אני ספיר הדר. אני כאן כדי לעזור לך להשתחרר מכאבים פיזיים ורגשיים, להפיג מתחים ולמצוא את השקט הפנימי שלך דרך טיפול הוליסטי ומדויק.
+          <p className="text-xl md:text-2xl mb-12 text-rose-800/80 max-w-3xl mx-auto leading-relaxed font-medium">
+            אני מזמינה אותך למרחב בטוח ושקט שבו הגוף שלך מקבל את תשומת הלב המגיעה לו. 
+            כשאת מטפלת בכפות הרגליים, את מטפלת בנשמה.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a
-              href="#contact"
-              className="bg-sage-600 hover:bg-sage-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all"
+              href="https://wa.me/972500000000" // Replace with actual number if known
+              target="_blank"
+              rel="noreferrer"
+              className="bg-rose-600 hover:bg-rose-700 text-white font-bold py-5 px-10 rounded-full text-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
             >
-              לשיחת ייעוץ והיכרות
+              <Phone size={24} />
+              תיאום טיפול בוואטסאפ
             </a>
             <a
               href="#about"
-              className="bg-white hover:bg-sand-100 text-sage-800 font-bold py-4 px-8 rounded-full text-lg border border-sage-200 transition-all"
+              className="bg-white hover:bg-rose-50 text-rose-800 font-bold py-5 px-10 rounded-full text-xl border-2 border-rose-200 shadow-lg hover:shadow-xl transition-all flex items-center justify-center"
             >
-              איך זה עובד?
+              הכירי את "נס המגע"
             </a>
           </div>
         </div>
       </section>
 
-      {/* The "Pain" Section */}
+      {/* Philosophy Section */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sage-800">מכירה את התחושה ש...</h2>
-            <div className="h-1 w-20 bg-sage-300 mx-auto rounded-full"></div>
-          </div>
-          
-          <div className="space-y-6 text-lg text-sage-700">
-            <div className="flex items-start gap-4 bg-sand-50 p-6 rounded-2xl border border-sand-100">
-              <div className="mt-1 bg-sage-100 p-2 rounded-full text-sage-600 shrink-0">
-                <XCircle size={24} />
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2 relative">
+              <div className="absolute -inset-4 bg-rose-100 rounded-[3rem] rotate-3" />
+              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
+                <Image 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
+                  alt="נועם ספיר מטפלת" 
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <p>הגוף מאותת לך לעצור (כאבי ראש, עייפות כרונית, מתח בשרירים) אבל את לא מוצאת את הזמן להקשיב לו?</p>
             </div>
-            <div className="flex items-start gap-4 bg-sand-50 p-6 rounded-2xl border border-sand-100">
-              <div className="mt-1 bg-sage-100 p-2 rounded-full text-sage-600 shrink-0">
-                <XCircle size={24} />
+            <div className="md:w-1/2 space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-rose-900 leading-tight">
+                רפלקסולוגיה היא לא רק עיסוי נעים
+              </h2>
+              <p className="text-lg text-rose-800 leading-relaxed">
+                זוהי כלי עוצמתי לשחרור חסימות רגשיות, הפחתת מתחים ואיזון המערכות ההורמונליות והפיזיות. 
+                במרחב שלי, "נס המגע", אני משלבת הקשבה עמוקה לידע שהגוף צובר יחד עם מגע מרפא ומדויק.
+              </p>
+              <div className="space-y-4 pt-4">
+                {[
+                  "שלווה עמוקה ושחרור מתחים מצטברים",
+                  "חיבור פנימי וזמן איכות שבו את במרכז",
+                  "איזון גופני: סיוע בשינה, עיכול ואיזון נשי"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="bg-rose-100 p-1 rounded-full text-rose-600">
+                      <CheckCircle2 size={20} />
+                    </div>
+                    <span className="font-semibold text-rose-900">{item}</span>
+                  </div>
+                ))}
               </div>
-              <p>לחצים ומחשבות טורדניות מנהלים את היום-יום שלך ומקשים עליך להירדם בלילה?</p>
             </div>
-            <div className="flex items-start gap-4 bg-sand-50 p-6 rounded-2xl border border-sand-100">
-              <div className="mt-1 bg-sage-100 p-2 rounded-full text-sage-600 shrink-0">
-                <XCircle size={24} />
-              </div>
-              <p>את מרגישה ניתוק בין מה שהגוף צריך לבין קצב החיים שדורש ממך להיות תמיד בעשייה?</p>
-            </div>
-          </div>
-
-          <div className="mt-16 text-center">
-            <p className="text-2xl font-medium text-sage-800 italic">
-              זה לא חייב להיות ככה. אפשר להחזיר את הגוף לאיזון טבעי.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* The "Solution" Section - 3 Steps */}
-      <section id="about" className="py-24 bg-sage-50">
+      {/* Gallery Section */}
+      <section className="py-24 bg-rose-50/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-rose-900 mb-4 italic">נס המגע בתמונות</h2>
+            <div className="h-1.5 w-24 bg-rose-300 mx-auto rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {galleryImages.map((img, i) => (
+              <div key={i} className="relative aspect-square rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 border-2 border-white">
+                <Image src={img} alt={`Gallery ${i}`} fill className="object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Grid */}
+      <section id="about" className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sage-800">הדרך לשקט הפנימי: איך זה עובד?</h2>
-            <p className="text-xl text-sage-600">טיפול רפלקסולוגיה אינו רק "עיסוי רגליים". זהו תהליך אבחון וטיפול עמוק.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rose-900">מה הטיפול מעניק לך?</h2>
+            <p className="text-xl text-rose-600 font-medium">החזירה את האיזון לחייך דרך כפות הרגליים</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
-              <div className="bg-sage-100 w-16 h-16 rounded-2xl flex items-center justify-center text-sage-600 mb-6">
-                <Leaf size={32} />
+            <div className="bg-rose-50/50 p-10 rounded-[2.5rem] border-2 border-rose-100 text-center hover:bg-rose-50 transition-colors">
+              <div className="bg-white w-20 h-20 rounded-3xl flex items-center justify-center text-rose-500 mb-8 mx-auto shadow-sm">
+                <Leaf size={40} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-sage-800">1. אבחון והקשבה</h3>
-              <p className="text-sage-600 leading-relaxed">
-                כפות הרגליים הן המפה של הגוף והנפש. בפגישה הראשונה נקיים אבחון מעמיק המזהה חסימות, עומסים ונקודות חולשה שדורשות התייחסות.
+              <h3 className="text-2xl font-bold mb-4 text-rose-900">שלווה עמוקה</h3>
+              <p className="text-rose-800/80 leading-relaxed font-medium">
+                שחרור מתחים מצטברים מהיום-יום העמוס, והרפיה מוחלטת של מערכת העצבים.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
-              <div className="bg-sage-100 w-16 h-16 rounded-2xl flex items-center justify-center text-sage-600 mb-6">
-                <HeartPulse size={32} />
+            <div className="bg-rose-50/50 p-10 rounded-[2.5rem] border-2 border-rose-100 text-center hover:bg-rose-50 transition-colors">
+              <div className="bg-white w-20 h-20 rounded-3xl flex items-center justify-center text-rose-500 mb-8 mx-auto shadow-sm">
+                <Sparkles size={40} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-sage-800">2. טיפול ממוקד</h3>
-              <p className="text-sage-600 leading-relaxed">
-                באמצעות לחיצות ועיסוי מדויק בנקודות רפלקס בכפות הרגליים, אנו מעוררים את מנגנוני הריפוי הטבעיים של הגוף ומשחררים מתח אגור.
+              <h3 className="text-2xl font-bold mb-4 text-rose-900">חיבור פנימי</h3>
+              <p className="text-rose-800/80 leading-relaxed font-medium">
+                זמן איכות אמיתי שבו את במרכז, מאפשרת לעצמך לעצור ולהקשיב לצרכים של הגוף והנפש.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
-              <div className="bg-sage-100 w-16 h-16 rounded-2xl flex items-center justify-center text-sage-600 mb-6">
-                <Sparkles size={32} />
+            <div className="bg-rose-50/50 p-10 rounded-[2.5rem] border-2 border-rose-100 text-center hover:bg-rose-50 transition-colors">
+              <div className="bg-white w-20 h-20 rounded-3xl flex items-center justify-center text-rose-500 mb-8 mx-auto shadow-sm">
+                <HeartPulse size={40} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-sage-800">3. איזון והרפיה</h3>
-              <p className="text-sage-600 leading-relaxed">
-                הגוף לומד לחזור למצב של רגיעה מוחלטת (מערכת פארא-סימפטטית). תחושת הקלה, אנרגיה מחודשת וחיבור עמוק יותר לעצמך.
+              <h3 className="text-2xl font-bold mb-4 text-rose-900">איזון גופני</h3>
+              <p className="text-rose-800/80 leading-relaxed font-medium">
+                סיוע אפקטיבי בבעיות שינה, מערכת העיכול, ואיזון הורמונלי ונשי טבעי.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-sand-100/50 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="flex justify-center gap-1 mb-4">
+              {[...Array(5)].map((_, i) => <Star key={i} className="fill-rose-400 text-rose-400" size={20} />)}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-rose-900 mb-4">הנשים שביקרו ב"נס המגע" מספרות</h2>
+            <div className="h-1.5 w-24 bg-rose-300 mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {testimonials.map((img, i) => (
+              <div key={i} className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white hover:rotate-1 transition-transform">
+                <Image 
+                  src={img} 
+                  alt={`Testimonial ${i}`} 
+                  width={400} 
+                  height={600} 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -114,70 +187,77 @@ export default function Home() {
       {/* Qualification Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-red-50/50 p-8 rounded-3xl border border-red-100">
-              <div className="flex items-center gap-3 mb-6">
-                <UserX className="text-red-500" size={28} />
-                <h3 className="text-2xl font-bold text-red-900">למי זה לא מתאים?</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-rose-50/30 p-10 rounded-[2.5rem] border-2 border-rose-100">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="bg-rose-200 p-3 rounded-2xl text-rose-600">
+                  <UserCheck size={32} />
+                </div>
+                <h3 className="text-2xl font-black text-rose-900">למי זה מתאים?</h3>
               </div>
-              <ul className="space-y-4 text-red-800/80">
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                  <span>למי שמחפש "פתרון קסם" ברגע בלי נכונות לתהליך.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                  <span>למי שלא מוכנה לפנות שעה בשבוע לעצמה.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                  <span>למי שמעדיף להתעלם מהקשר שבין מתח נפשי לכאב פיזי.</span>
-                </li>
+              <ul className="space-y-5">
+                {[
+                  "למי שמרגישה שהיא צריכה רגע לעצמה בתוך המרוץ",
+                  "למי שסובלת ממתח, עומס נפשי או קשיי שינה",
+                  "למי שמחפשת פתרון טבעי ועמוק לאיזון הגוף"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4 group">
+                    <CheckCircle2 className="text-rose-500 shrink-0 mt-1 transition-transform group-hover:scale-110" size={22} />
+                    <span className="text-lg font-semibold text-rose-800">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            <div className="bg-sage-50 p-8 rounded-3xl border border-sage-200">
-              <div className="flex items-center gap-3 mb-6">
-                <UserCheck className="text-sage-600" size={28} />
-                <h3 className="text-2xl font-bold text-sage-900">למי זה כן מתאים?</h3>
+            <div className="bg-stone-50 p-10 rounded-[2.5rem] border-2 border-stone-100">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="bg-stone-200 p-3 rounded-2xl text-stone-600">
+                  <UserX size={32} />
+                </div>
+                <h3 className="text-2xl font-black text-stone-800">למי זה לא מתאים?</h3>
               </div>
-              <ul className="space-y-4 text-sage-800">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-sage-500 shrink-0 mt-0.5" size={20} />
-                  <span>למי שרוצה להפסיק לסבול מכאבים ומתחים כרוניים.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-sage-500 shrink-0 mt-0.5" size={20} />
-                  <span>לנשים בתקופות עומס, משבר או שינוי שצריכות עוגן ומקום מכיל.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-sage-500 shrink-0 mt-0.5" size={20} />
-                  <span>למי שמאמינה בכוח הריפוי הטבעי של הגוף ומוכנה להשקיע בעצמה.</span>
-                </li>
+              <ul className="space-y-5">
+                {[
+                  "למי שמחפשת רק עיסוי טכני ללא חיבור פנימי",
+                  "למי שלא מוכנה להתמסר לתהליך של שקט והרפיה",
+                  "למי שרוצה תוצאות 'קסם' מבלי להקשיב לגוף"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4 opacity-70">
+                    <XCircle className="text-stone-400 shrink-0 mt-1" size={22} />
+                    <span className="text-lg font-medium text-stone-700">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-24 bg-sand-100">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="w-48 h-48 md:w-64 md:h-64 bg-sage-200 rounded-full shrink-0 overflow-hidden shadow-xl border-4 border-white flex items-center justify-center text-sage-600 relative">
-              {/* Fallback avatar if no image is provided */}
-              <span className="text-2xl font-bold">ספיר הדר</span>
+      {/* About Noam Section */}
+      <section className="py-24 bg-rose-50/50 relative overflow-hidden">
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="w-64 h-64 md:w-80 md:h-80 relative shrink-0">
+              <div className="absolute inset-0 bg-rose-200 rounded-[4rem] rotate-6" />
+              <div className="absolute inset-0 bg-white rounded-[4rem] overflow-hidden shadow-2xl border-4 border-rose-100">
+                <Image 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.31.12.jpeg" 
+                  alt="נועם ספיר" 
+                  fill 
+                  className="object-cover"
+                />
+              </div>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-4 text-sage-900">נעים להכיר, ספיר הדר</h2>
-              <div className="space-y-4 text-lg text-sage-700 leading-relaxed">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-black text-rose-900">נעים מאוד, אני נועם ספיר</h2>
+              <div className="space-y-4 text-xl text-rose-800/90 leading-relaxed font-medium">
                 <p>
-                  אני ספיר, רפלקסולוגית ומטפלת מוסמכת בגישת גוף-נפש. 
-                  אני מאמינה שהגוף שלנו מדבר אלינו כל הזמן, והתפקיד שלי הוא לעזור לך לתרגם את השפה שלו.
+                  רפלקסולוגית בגישת גוף-נפש ומקימת קליניקת "נס המגע". 
+                  האמונה שלי היא שהגוף שלנו הוא המראה המדויקת ביותר לכל מה שעובר עלינו בפנים.
                 </p>
                 <p>
-                  במהלך שנות עבודתי, ליוויתי נשים רבות בתהליכי ריפוי, שחרור מכאבים כרוניים, חרדות ומתחים.
-                  הקליניקה שלי היא מרחב בטוח, מכיל ועוטף, שבו את יכולה פשוט להיות, להניח את העומס בחוץ, ולחזור הביתה אל הגוף שלך.
+                  בטיפולים שלי אני יוצרת מעטפת של שקט וביטחון, המאפשרת לך להניח את כל המשקולות בכניסה ולצלול פנימה. 
+                  דרך כפות הרגליים, אנחנו פותחות חסימות, מאזנות ומחזירות לגוף את האנרגיה הטבעית שלו.
                 </p>
               </div>
             </div>
@@ -186,31 +266,40 @@ export default function Home() {
       </section>
 
       {/* Contact / CTA */}
-      <section id="contact" className="py-24 bg-sage-800 text-white text-center">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">מוכנה לעשות את הצעד הראשון?</h2>
-          <p className="text-xl text-sage-200 mb-10">
-            השאירי פרטים או צרי קשר עכשיו, ונתאם שיחת ייעוץ קצרה ללא התחייבות כדי לבדוק איך אוכל לעזור לך.
+      <section id="contact" className="py-32 bg-rose-900 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.30.45%20(1).jpeg')] bg-cover bg-center opacity-10 scale-110" />
+        <div className="container mx-auto px-4 max-w-3xl relative z-10">
+          <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">הגיע הזמן שלך <br /> להעניק לעצמך "נס מגע"</h2>
+          <p className="text-2xl text-rose-100 mb-12 font-medium opacity-90">
+            אני מזמינה אותך לטיפול בקליניקה שלי, מקום שבו את והגוף שלך הם הדבר הכי חשוב.
           </p>
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-8">
             <a
               href="https://wa.me/972500000000" // Replace with actual number
               target="_blank"
               rel="noreferrer"
-              className="bg-white text-sage-900 font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center gap-3"
+              className="bg-white text-rose-900 font-black py-6 px-14 rounded-full text-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-4"
             >
-              <Phone size={24} />
+              <Phone size={32} />
               דברי איתי בוואטסאפ
             </a>
-            <p className="text-sage-300">או עקבי אחריי ב-<a href="https://www.facebook.com/sapir.hadar/photos" target="_blank" className="underline hover:text-white">פייסבוק</a></p>
+            <div className="flex gap-4 items-center text-rose-200 font-semibold text-lg">
+              <span>עקבי אחריי לעוד רגעי שלווה</span>
+              <a href="https://www.facebook.com/sapir.hadar/photos" target="_blank" className="underline hover:text-white transition-colors">בפייסבוק</a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-sage-950 text-sage-400 py-8 text-center text-sm">
+      <footer className="bg-rose-950 text-rose-300 py-12 text-center text-sm border-t border-rose-900/50">
         <div className="container mx-auto px-4">
-          <p>© {new Date().getFullYear()} ספיר הדר - רפלקסולוגיה וטיפול גוף נפש. כל הזכויות שמורות.</p>
+          <div className="mb-6 flex justify-center gap-6 opacity-60">
+             <span className="font-bold tracking-widest uppercase">נס המגע</span>
+             <span>|</span>
+             <span className="font-bold tracking-widest uppercase">נועם ספיר</span>
+          </div>
+          <p className="font-medium">© {new Date().getFullYear()} נועם ספיר - רפלקסולוגיה וטיפול גוף נפש. כל הזכויות שמורות.</p>
         </div>
       </footer>
     </main>

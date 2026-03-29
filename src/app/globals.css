@@ -1,32 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sage-50: #f4f7f4;
-  --color-sage-100: #e4efe5;
-  --color-sage-200: #c9e0cb;
-  --color-sage-300: #a0c9a4;
-  --color-sage-400: #74ac7a;
-  --color-sage-500: #54905b;
-  --color-sage-600: #407246;
-  --color-sage-700: #355b3a;
-  --color-sage-800: #2d4931;
-  --color-sage-900: #253c29;
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-300: #fda4af;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
+  --color-rose-700: #be123c;
+  --color-rose-800: #9f1239;
+  --color-rose-900: #881337;
 
-  --color-sand-50: #fdfdfc;
-  --color-sand-100: #f8f6f0;
-  --color-sand-200: #efeade;
-  --color-sand-300: #e1d6c2;
-  --color-sand-400: #cebfa3;
-  --color-sand-500: #bfa886;
-  --color-sand-600: #b09170;
-  --color-sand-700: #93735a;
-  --color-sand-800: #7a604f;
-  --color-sand-900: #644f43;
+  --color-pink-50: #fdf2f8;
+  --color-pink-100: #fce7f3;
+  --color-pink-200: #fbcfe8;
+  --color-pink-300: #f9a8d4;
+  --color-pink-400: #f472b6;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+  --color-pink-700: #be185d;
+  --color-pink-800: #9d174d;
+  --color-pink-900: #831843;
+
+  --color-sand-50: #fffdfc;
+  --color-sand-100: #fdf8f6;
+  --color-sand-200: #faefe9;
 }
 
 :root {
-  --background: #fdfdfc;
-  --foreground: #2d4931;
+  --background: #fffdfc;
+  --foreground: #881337;
 }
 
 body {

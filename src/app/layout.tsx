@@ -8,8 +8,8 @@ const assistant = Assistant({
 });
 
 export const metadata: Metadata = {
-  title: "ספיר הדר | רפלקסולוגית - מטפלת גוף נפש",
-  description: "החזירו את הגוף והנפש לאיזון דרך טיפול רפלקסולוגיה מקצועי והוליסטי עם ספיר הדר.",
+  title: "נועם ספיר | רפלקסולוגית גוף-נפש | נס המגע",
+  description: "הזמנה לטיפול בקליניקת 'נס המגע' – מרחב בטוח ושקט שבו הגוף שלך מקבל את תשומת הלב המגיעה לו. נועם ספיר, רפלקסולוגית בגישת גוף-נפש.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl" className={`${assistant.variable} scroll-smooth`}>
-      <body className="font-sans antialiased bg-[#fdfdfc] text-[#2d4931]">
+      <body className="font-sans antialiased bg-sand-50 text-rose-900">
         {children}
       </body>
     </html>
