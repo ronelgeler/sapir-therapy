@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star, Instagram, Facebook } from "lucide-react";
+import { CheckCircle2, Leaf, HeartPulse, Sparkles, Phone, UserX, UserCheck, XCircle, Star } from "lucide-react";
 
 export default function Home() {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=9720522331844&text&type=phone_number&app_absent=0";
@@ -298,7 +298,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.30.45%20(1).jpeg')] bg-cover bg-center opacity-10 scale-110" />
         <div className="container mx-auto px-4 max-w-3xl relative z-10">
           <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">הגיע הזמן שלך <br /> להעניק לעצמך "נס מגע"</h2>
-          <p className="text-2xl text-brand-100 mb-12 font-medium opacity-90">
+          <p className="text-2xl text-rose-100 mb-12 font-medium opacity-90">
             אני מזמינה אותך לטיפול בקליניקה שלי, מקום שבו את והגוף שלך הם הדבר הכי חשוב.
           </p>
           <div className="flex flex-col items-center gap-8">
@@ -312,13 +312,41 @@ export default function Home() {
               דברי איתי בוואטסאפ
             </a>
             
-            <div className="flex flex-wrap justify-center gap-6 mt-4">
-              <a href={instagramLink} target="_blank" className="flex items-center gap-2 text-brand-200 hover:text-white transition-colors font-semibold">
-                <Instagram size={24} />
+            <div className="flex flex-wrap justify-center gap-8 mt-4">
+              <a href={instagramLink} target="_blank" className="flex items-center gap-3 text-brand-200 hover:text-white transition-colors font-bold text-lg group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:scale-110 transition-transform"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
                 אינסטגרם
               </a>
-              <a href={facebookLink} target="_blank" className="flex items-center gap-2 text-brand-200 hover:text-white transition-colors font-semibold">
-                <Facebook size={24} />
+              <a href={facebookLink} target="_blank" className="flex items-center gap-3 text-brand-200 hover:text-white transition-colors font-bold text-lg group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:scale-110 transition-transform"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
                 פייסבוק
               </a>
             </div>
