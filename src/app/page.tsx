@@ -26,23 +26,36 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-sand-50 selection:bg-rose-100 text-rose-950">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden bg-rose-50/50">
-        <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.31.51.jpeg')] bg-cover bg-center opacity-10" />
+      <section className="relative pt-12 pb-24 overflow-hidden bg-rose-50/50">
+        <div className="absolute inset-0 bg-[url('/images/WhatsApp%20Image%202026-03-29%20at%2015.31.51.jpeg')] bg-cover bg-center opacity-5" />
         <div className="container mx-auto px-4 relative z-10 max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-right">
-            <div className="lg:w-3/5">
+          <div className="flex flex-col items-center text-center gap-8">
+            <div className="w-full max-w-lg relative mb-4">
+              <div className="absolute -inset-4 bg-rose-100 rounded-[4rem] rotate-3 opacity-50" />
+              <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] w-full mx-auto transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+                <Image 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.31.12.jpeg" 
+                  alt="נועם ספיר - רפלקסולוגית" 
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            
+            <div className="max-w-3xl">
               <span className="inline-block py-1.5 px-4 rounded-full bg-rose-200 text-rose-800 text-sm font-semibold mb-6 shadow-sm">
                 ברוכה הבאה לקליניקת "נס המגע"
               </span>
-              <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-rose-900 drop-shadow-sm">
+              <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight text-rose-900 drop-shadow-sm">
                 נועם ספיר <br />
                 <span className="text-rose-600 font-medium text-3xl md:text-5xl italic">רפלקסולוגית בגישת גוף-נפש</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-12 text-rose-800/80 max-w-3xl lg:ml-0 leading-relaxed font-medium">
+              <p className="text-xl md:text-2xl mb-12 text-rose-800/80 leading-relaxed font-medium">
                 אני מזמינה אותך למרחב בטוח ושקט שבו הגוף שלך מקבל את תשומת הלב המגיעה לו. 
                 כשאת מטפלת בכפות הרגליים, את מטפלת בנשמה.
               </p>
-              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-5 justify-center">
                 <a
                   href={whatsappLink}
                   target="_blank"
@@ -58,18 +71,6 @@ export default function Home() {
                 >
                   הכירי את "נס המגע"
                 </a>
-              </div>
-            </div>
-            <div className="lg:w-2/5 relative">
-              <div className="absolute -inset-4 bg-rose-100 rounded-[3rem] rotate-6" />
-              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] w-full max-w-sm mx-auto">
-                <Image 
-                  src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
-                  alt="נועם ספיר - רפלקסולוגית" 
-                  fill
-                  className="object-cover"
-                  priority
-                />
               </div>
             </div>
           </div>
@@ -251,26 +252,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Noam Section */}
+      {/* Final About Section with Atmosphere Image */}
       <section className="py-24 bg-rose-50/50 relative overflow-hidden">
         <div className="container mx-auto px-4 max-w-5xl relative z-10">
           <div className="flex flex-col md:flex-row gap-16 items-center">
-            <div className="w-64 h-64 md:w-80 md:h-80 relative shrink-0">
-              <div className="absolute inset-0 bg-rose-200 rounded-[4rem] rotate-6" />
-              <div className="absolute inset-0 bg-white rounded-[4rem] overflow-hidden shadow-2xl border-4 border-rose-100">
+            <div className="w-full md:w-1/2 relative h-[400px]">
+              <div className="absolute inset-0 bg-rose-200 rounded-[4rem] -rotate-6" />
+              <div className="absolute inset-0 bg-white rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image 
-                  src="/images/WhatsApp Image 2026-03-29 at 15.31.12.jpeg" 
-                  alt="נועם ספיר" 
+                  src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
+                  alt="נועם ספיר - קליניקה" 
                   fill 
                   className="object-cover"
                 />
               </div>
             </div>
-            <div className="space-y-6 text-center md:text-right">
-              <h2 className="text-4xl font-black text-rose-900">נעים מאוד, אני נועם ספיר</h2>
+            <div className="md:w-1/2 space-y-6 text-center md:text-right">
+              <h2 className="text-4xl font-black text-rose-900">מרחב "נס המגע"</h2>
               <div className="space-y-4 text-xl text-rose-800/90 leading-relaxed font-medium">
                 <p>
-                  רפלקסולוגית בגישת גוף-נפש ומקימת קליניקת "נס המגע". 
+                  נעים מאוד, אני נועם ספיר. 
                   האמונה שלי היא שהגוף שלנו הוא המראה המדויקת ביותר לכל מה שעובר עלינו בפנים.
                 </p>
                 <p>
