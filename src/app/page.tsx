@@ -17,6 +17,12 @@ export default function Home() {
     "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.43 (6).jpeg",
     "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44.jpeg",
     "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (1).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (2).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (3).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (4).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (5).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (6).jpeg",
+    "/images/testimonials/WhatsApp Image 2026-03-29 at 16.39.44 (7).jpeg",
   ];
 
   const galleryImages = [
@@ -196,15 +202,15 @@ export default function Home() {
             <div className="h-1.5 w-24 bg-brand-300 mx-auto rounded-full"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8 max-w-6xl mx-auto">
             {testimonials.map((img, i) => (
-              <div key={i} className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white hover:rotate-1 transition-transform">
+              <div key={i} className="break-inside-avoid rounded-2xl overflow-hidden shadow-lg border-2 border-white hover:scale-[1.02] transition-all duration-300">
                 <Image 
                   src={img} 
                   alt={`Testimonial ${i}`} 
-                  width={400} 
-                  height={600} 
-                  className="w-full h-auto object-contain"
+                  width={600} 
+                  height={800} 
+                  className="w-full h-auto block"
                 />
               </div>
             ))}
