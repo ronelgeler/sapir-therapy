@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+@theme {
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e4efe5;
+  --color-sage-200: #c9e0cb;
+  --color-sage-300: #a0c9a4;
+  --color-sage-400: #74ac7a;
+  --color-sage-500: #54905b;
+  --color-sage-600: #407246;
+  --color-sage-700: #355b3a;
+  --color-sage-800: #2d4931;
+  --color-sage-900: #253c29;
+
+  --color-sand-50: #fdfdfc;
+  --color-sand-100: #f8f6f0;
+  --color-sand-200: #efeade;
+  --color-sand-300: #e1d6c2;
+  --color-sand-400: #cebfa3;
+  --color-sand-500: #bfa886;
+  --color-sand-600: #b09170;
+  --color-sand-700: #93735a;
+  --color-sand-800: #7a604f;
+  --color-sand-900: #644f43;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fdfdfc;
+  --foreground: #2d4931;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
