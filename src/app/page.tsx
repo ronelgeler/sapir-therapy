@@ -27,7 +27,6 @@ export default function Home() {
 
   const galleryImages = [
     "/images/WhatsApp Image 2026-03-29 at 15.30.44 (1).jpeg",
-    "/images/WhatsApp Image 2026-03-29 at 15.30.44.jpeg",
     "/images/WhatsApp Image 2026-03-29 at 15.30.45 (1).jpeg",
     "/images/WhatsApp Image 2026-03-29 at 15.30.45 (2).jpeg",
     "/images/WhatsApp Image 2026-03-29 at 15.30.45 (3).jpeg",
