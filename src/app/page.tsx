@@ -46,7 +46,7 @@ export default function Home() {
                 ברוכה הבאה לקליניקת "נס המגע"
               </span>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-brand-900 drop-shadow-sm">
-                נועם ספיר <br />
+                נועם ספיר הדר <br />
                 <span className="text-brand-600 font-medium text-3xl md:text-5xl italic">רפלקסולוגית בגישת גוף-נפש</span>
               </h1>
               <p className="text-xl md:text-2xl mb-12 text-brand-800/80 leading-relaxed font-medium max-w-2xl lg:ml-0 mx-auto lg:mr-0">
@@ -79,7 +79,7 @@ export default function Home() {
                 <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] w-full transform hover:rotate-0 transition-transform duration-500 hover:scale-[1.02]">
                   <Image 
                     src="/images/WhatsApp Image 2026-03-29 at 15.31.12.jpeg" 
-                    alt="נועם ספיר - רפלקסולוגית" 
+                    alt="נועם ספיר הדר - רפלקסולוגית" 
                     fill
                     className="object-cover"
                     priority
@@ -111,7 +111,7 @@ export default function Home() {
                 רפלקסולוגיה היא לא רק עיסוי נעים
               </h2>
               <p className="text-lg text-brand-800 leading-relaxed">
-                זוהי כלי עוצמתי לשחרור חסימות רגשיות, הפחתת מתחים ואיזון המערכות ההורמונליות והפיזיות. 
+                זהו כלי עוצמתי לשחרור חסימות רגשיות, הפחתת מתחים ואיזון המערכות ההורמונליות והפיזיות. 
                 במרחב שלי, "נס המגע", אני משלבת הקשבה עמוקה לידע שהגוף צובר יחד עם מגע מרפא ומדויק.
               </p>
               <div className="space-y-4 pt-4 text-right">
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-900">מה הטיפול מעניק לך?</h2>
-            <p className="text-xl text-brand-600 font-medium">החזירה את האיזון לחייך דרך כפות הרגליים</p>
+            <p className="text-xl text-brand-600 font-medium">להחזיר את האיזון לחייך דרך כפות הרגליים</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -275,7 +275,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-white rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image 
                   src="/images/WhatsApp Image 2026-03-29 at 15.31.51.jpeg" 
-                  alt="נועם ספיר - קליניקה" 
+                  alt="נועם ספיר הדר - קליניקה" 
                   fill 
                   className="object-cover"
                 />
@@ -285,7 +285,7 @@ export default function Home() {
               <h2 className="text-4xl font-black text-brand-900">מרחב "נס המגע"</h2>
               <div className="space-y-4 text-xl text-brand-800/90 leading-relaxed font-medium">
                 <p>
-                  נעים מאוד, אני נועם ספיר. 
+                  נעים מאוד, אני נועם ספיר הדר. 
                   האמונה שלי היא שהגוף שלנו הוא המראה המדויקת ביותר לכל מה שעובר עלינו בפנים.
                 </p>
                 <p>
@@ -365,9 +365,9 @@ export default function Home() {
           <div className="mb-6 flex justify-center gap-6 opacity-60">
              <span className="font-bold tracking-widest uppercase">נס המגע</span>
              <span>|</span>
-             <span className="font-bold tracking-widest uppercase">נועם ספיר</span>
+             <span className="font-bold tracking-widest uppercase">נועם ספיר הדר</span>
           </div>
-          <p className="font-medium">© {new Date().getFullYear()} נועם ספיר - רפלקסולוגיה וטיפול גוף נפש. כל הזכויות שמורות.</p>
+          <p className="font-medium">© {new Date().getFullYear()} נועם ספיר הדר - רפלקסולוגיה וטיפול גוף נפש. כל הזכויות שמורות.</p>
         </div>
       </footer>
     </main>
